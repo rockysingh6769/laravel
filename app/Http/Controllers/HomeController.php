@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\user;
+use App\role;
+
 
 class HomeController extends Controller
 {
@@ -12,6 +14,7 @@ class HomeController extends Controller
     	//$users = user::find(1);
     	//$users = user::find(1)->mobile;
      	//$users = user::find(1)->passport;
-     	return view('welcome');
+     	//$users = user::find(1)->roles;
+        return view('welcome');
     }
 }

@@ -19,4 +19,8 @@ class user extends Model
     {
     	return  $this->hasMany(mobile::class);
     }
+    public function roles()
+    {
+        return  $this->belongsToMany(role::class);
+    }
 }
