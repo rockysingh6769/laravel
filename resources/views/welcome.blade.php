@@ -3,5 +3,5 @@
 @section('title','Welcome')
 
 @section('body')
- Welcome {{ $user->number }}
+ Welcome 
 @endsection

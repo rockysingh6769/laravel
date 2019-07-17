@@ -9,7 +9,9 @@ class HomeController extends Controller
 {
     public function index()
     {
-    	$user = user::find(1)->passport;
-    	return view('welcome',compact('user'));
+    	//$users = user::find(1);
+    	//$users = user::find(1)->mobile;
+     	//$users = user::find(1)->passport;
+     	return view('welcome');
     }
 }
