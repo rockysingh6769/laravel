@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\user;
 use App\role;
 use App\video;
+use App\post;
 
 class HomeController extends Controller
 {
@@ -15,7 +16,8 @@ class HomeController extends Controller
     	//$users = user::find(1)->mobile;
      	//$users = user::find(1)->passport;
      	//$users = user::find(1)->roles;
-        $videos =video::all();
-        return view('welcome',compact('videos'));
+        // $post =post::first();
+        //return $post->tags;
+        return view('welcome');
     }
 }
