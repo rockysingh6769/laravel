@@ -3,7 +3,7 @@
 @section('title','Welcome')
 
 @section('body')
- Welcome 
+ <h1> Welcome Page </h1> 
 @endsection
 
 

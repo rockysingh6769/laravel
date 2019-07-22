@@ -6,6 +6,8 @@
 
 @section('editBody',$item->body)
 
+@section('editName','Update')
+
 @section('editMethod')
  {{ method_field('PUT') }}
 @endsection
