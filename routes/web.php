@@ -23,20 +23,24 @@ Route::get('/contact','testController@contact');
 //    return view('file.home');
 // })->middleware('test:test');
 
-Route::get('/about','testController@about')->middleware('test');
+Route::get('/about','testController@about');
 
 // what is middleware :-
 // Middleware like work as a condition before execute the function checking conditionn in create in       middleware file in this case file name is test there are different different ways to use middleware.
 
 // How to use middleware :-
-// There are three ways  to use in App/Http/Kernel file already has functions following example :-.
-// 1. first one is in  this file has protected $routeMiddleware array add middleware file path like
-//   'test' =>   \App\Http\Middleware\test::class,  
+// 2. Secound one is in the controller file we create contruct function and use middleware inside construct
+//    function eg:- 
+    // public function __construct()
+    // {
+    // 	$this->middleware('test');
+    // }
 
 
 //first way call middleware before call any controller function  
 
-// This is firstway
+// This is Secoundway
+
 
 
 
