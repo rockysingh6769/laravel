@@ -3,6 +3,7 @@
 namespace App\Http\Middleware;
 
 use Closure;
+use App\user;
 
 class test
 {
@@ -13,12 +14,18 @@ class test
      * @param  \Closure  $next
      * @return mixed
      */
-    public function handle($request, Closure $next)
+    public function handle($request, Closure $next,$name)
     {
-        $ip =$request->ip();
-        if($ip == '127.0.0.1'){ 
-         throw new \Exception("Your Ip is correct");
-        }
+        $user = user::find(1);
+        if($name == $user->name)
+        {
+            throw new \Exception("Your Ip is correct");
+            
+        }else
+        {
         return $next($request);
+
+        }
+        
     }
 }
