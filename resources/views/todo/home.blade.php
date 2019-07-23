@@ -10,7 +10,7 @@
           <thead>
           <tr>
           <th scope="col">Item Name</th>
-          <th scope="col">Submit Date</th>
+          <th scope="col">Submited </th>
           <th scope="col">Action</th>
           </tr>
           </thead>

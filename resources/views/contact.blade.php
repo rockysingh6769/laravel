@@ -3,5 +3,5 @@
 @section('title','About')
 
 @section('body')
- Contact Page
+ Contact Page	
 @endsection

@@ -14,10 +14,10 @@ class test
      * @param  \Closure  $next
      * @return mixed
      */
-    public function handle($request, Closure $next,$name)
+    public function handle($request, Closure $next,$name,$name1)
     {
         $user = user::find(1);
-        if($name == $user->name)
+        if($name == $user->name && $name1 == $user->name)
         {
             throw new \Exception("Your Ip is correct");
             
