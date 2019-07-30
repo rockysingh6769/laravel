@@ -19,9 +19,9 @@ Route::get('/','HomeController@index');
 Route::get('about','PagesController@about');
 Route::get('/contact','testController@contact');
 
- Route::get('/file',function(){
+Route::get('/file',function(){
     return view('file.home');
- })->middleware('test:michael,michael');
+})->middleware('test:michael,michael');
 
 //Route::post('send','mailController@send');
 //Route::get('email','mailController@email');

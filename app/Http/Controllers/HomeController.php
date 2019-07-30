@@ -13,11 +13,11 @@ class HomeController extends Controller
     public function index()
     {
     	//$users = user::find(1);
-    	//$users = user::find(1)->mobile;
+        //$users = user::find(1)->mobile;
      	//$users = user::find(1)->passport;
      	//$users = user::find(1)->roles;
-        // $post =post::first();
+        //$post  =  post::first();
         //return $post->tags;
-        return view('welcome');
+    	return view('welcome');
     }
 }
